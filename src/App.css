@@ -1,0 +1,97 @@
+.ScrollLock {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.ProductDealWrapper {
+    scrollbar-width: none;
+}
+
+.ProductDealWrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Outline Text w/ black */
+.TourLocationText,
+.SlideWrapper,
+.PriceSliderText,
+.ShopText_Frames,
+.ShopText_Merch, 
+.ImageCardTextBlack,
+.DealCardDescBlack,
+.PhotoBookText {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.BlackTextOutline-Hover,
+.BlackTextOutline,
+.WhiteTextOutline:hover {
+    text-shadow: 2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/* Outline Text w/ white */
+.BlackTextOutline-Hover:hover,
+.ShopText_Frames:hover,
+.ShopText_Merch:hover,
+.ResultsTextWhite,
+.FaviconTextOutline,
+.WhiteTextOutline {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    color: #000;
+}
+
+.FaviconTextOutline:hover {
+    text-shadow: -1px -1px 0 #d719f0ad, 1px -1px 0 #70e2d8b0, -1px 1px 0 #c825cea9, 1px 1px 0 #ffffff;
+
+}
+
+.PriceSlider {
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 29px;
+}
+
+.PriceSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 49px;
+    border: 2px solid rgb(212 212 212);
+    background: #fff;
+}
+
+.PriceSlider:hover::-webkit-slider-thumb {
+    background: #e2e2e2;
+    border: 3px solid rgb(240, 240, 240)
+}
+
+.PriceSlider:active::-webkit-slider-thumb {
+    background: #fff;
+    border: 2px solid rgb(212 212 212)
+}
+
+.PriceSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 49px;
+    border: 2px solid rgb(212 212 212);
+    background: '#fff';
+}
+
+.PriceSlider:hover::-moz-range-thumb {
+    background: #e2e2e2;
+    border: 3px solid rgb(240, 240, 240)
+}
+
+.PriceSlider:active::-moz-range-thumb {
+    background: #fff;
+    border: 2px solid rgb(212 212 212)
+}
+
+.ItemGalleryNext,
+.ItemGalleryPrev {
+    user-select: none;
+}

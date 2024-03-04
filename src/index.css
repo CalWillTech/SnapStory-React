@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Mate&family=Noto+Serif:ital@1&family=Red+Hat+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .Default-Button {
+        @apply
+        w-48 h-12 mx-auto mt-2 flex flex-col justify-center 
+        text-center text-white border-4 border-white rounded-xl 
+        motion-reduce:hover:text-cyan-400
+        bg-gradient-to-tr from-black to-gray-600/80 
+        shadow-gray-800 shadow-md
+        cursor-pointer motion-safe:hover:scale-105 motion-safe:hover:animate-[btnOut_150ms_ease-in]
+    }
+    .ShopSelection-button {
+        @apply
+        w-[10rem] h-10 my-auto
+        rounded-full text-center
+        bg-gradient-to-br from-slate-300 to-neutral-900 
+        motion-reduce:hover:text-cyan-400
+        group-hover:from-neutral-900 border-2 border-black group-hover:border-yellow-500 
+        shadow-none group-hover:shadow-md motion-safe:transition-all duration-500
+    }
+    .CartModal-button {
+        @apply
+        w-full h-12
+        text-center text-lg text-white border-4 border-white rounded-xl 
+        bg-gradient-to-tr from-black to-gray-600/80 
+        motion-reduce:hover:text-cyan-400
+        shadow-gray-800 shadow-md
+        cursor-pointer hover:scale-105 motion-safe:hover:animate-[btnOut_150ms_ease-in]
+    }
+    .buttonLayout {
+        @apply size-10 p-1 rounded-full border-2 border-black text-neutral-100
+        bg-gradient-to-bl from-cyan-700 via-slate-800 to-fuchsia-600
+        hover:size-11 hover:p-0.5 active:size-10 active:p-1
+    }
+    .Attribute-li {
+        @apply w-full min-h-[22rem] flex flex-col text-2xl
+    }
+    .Cyan-Link {
+        @apply hover:text-cyan-600 active:text-current
+        h-0
+    }
+    .AttributeTextWrapper-div {
+        @apply flex max-md:justify-between max-md:px-6 gap-2 
+        border-b-[1px] border-black
+    }
+    .HomeImageArrows-icon {
+        @apply 
+        w-[4rem] h-[50%] absolute bottom-[15%]
+        flex justify-center cursor-pointer 
+        transition-colors duration-500 bg-black/70 lg:bg-black/35 hover:bg-black/70
+    }
+    .HomeProductCard-div {
+        @apply
+        w-full md:w-[30%] h-80 md:h-[85%] mx-auto relative md:top-12 
+        rounded-[39px] text-center text-xl lg:text-3xl flex flex-col justify-end max-md:gap-10
+        opacity-0 bg-gradient-to-bl from-gray-800 to-[#16161d] shadow-xl shadow-gray-600/65
+        motion-safe:transition-opacity duration-[350ms] delay-100 max-lg:opacity-100
+    }
+    .SnapHeader-div {
+        @apply
+        w-full h-2 bg-gradient-to-l from-cyan-400 via-violet-500 to-fuchsia-700
+    }
+    .Modal {
+        @apply
+        sticky top-0 z-10 h-[105vh] -mt-[105vh]
+    }
+    .AnswerBox {
+        @apply
+        text-black
+    }
+}
