@@ -17,7 +17,7 @@ I would suggest creating an e-commerce application.
 
 Functionality:
 
-I purposely made this application as if it were a commercially ran store.
+I've created the features for this site with inspiration from Shopify's template store.
 From adding and removing items from your shopping cart, to searching for items in the shop page.
 
 Features are as followed:
@@ -27,7 +27,9 @@ adding and removing items from your cart, and checkout page ready to send data
 to a secure backend Restful-API (Wix, Shopify, etc).
 
 NOTE:
-Items in your cart are lost on page refresh. 
+
+Because this website is purely front-end code, items inside your cart are lost after page refresh.
+
 
 
 License:
